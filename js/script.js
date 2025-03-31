@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
   const menuToggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.site-nav');
 
-  // Add "scrolled" class to header on scroll
   window.addEventListener('scroll', function() {
     if (window.scrollY > 50) {
       header.classList.add('scrolled');
@@ -12,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  // Toggle mobile nav
   menuToggle.addEventListener('click', () => {
     nav.classList.toggle('open');
   });
