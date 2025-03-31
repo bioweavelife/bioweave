@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - BioWeave</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script defer src="../js/script.js"></script>
+  <style>
+    /* CONTACT CARD STYLES */
+    .contact-card {
+      background-color: #fff;
+      padding: 2rem;
+      margin-top: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      width: 100%;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .contact-card h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .contact-card .intro-text {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: clamp(1rem, 2vw, 1.125rem);
+      line-height: 1.4;
+    }
+    .contact-card .contact-form {
+      margin-bottom: 1.5rem;
+    }
+    .contact-card .form-group {
+      margin-bottom: 1.2rem;
+    }
+    .contact-card .form-group label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .contact-card .form-group label span {
+      color: red;
+      margin-left: 2px;
+    }
+    .contact-card .form-group input,
+    .contact-card .form-group textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 1rem;
+      transition: border-color 0.2s ease;
+    }
+    .contact-card .form-group input:focus,
+    .contact-card .form-group textarea:focus {
+      border-color: #0077cc;
+      outline: none;
+    }
+    .contact-card .btn-primary {
+      display: inline-block;
+      background-color: #0077cc;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .contact-card .btn-primary:hover {
+      background-color: #005fa3;
+    }
+    .contact-card .direct-contact {
+      font-size: 1rem;
+      text-align: left;
+      margin-top: 1rem;
+      line-height: 1.4;
+    }
+    .contact-card .direct-contact a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    .contact-card .direct-contact a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../images/bioweave-logo.png" alt="BioWeave Logo" />
+          <span>BioWeave</span>
+        </a>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../products.html">Products</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section" id="contact-main">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>We’re here to assist you with any questions or additional information about BioWeave.</p>
+      <div class="contact-card">
+        <h2>General Inquiries</h2>
+        <p class="intro-text">
+          Have a question or need more info? Send us a message and we'll respond promptly.
+        </p>
+        <form action="#" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name<span>*</span></label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email<span>*</span></label>
+            <input type="email" id="email" name="email" placeholder="example@domain.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message<span>*</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Submit</button>
+        </form>
+        <p class="direct-contact">
+          Or reach us directly at:
+          <a href="mailto:jasmeet@bioweave.in">jasmeet@bioweave.in</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="careers-cta">
+    <div class="container">
+      <h2>Join Us</h2>
+      <p>Looking to shape the future of healthcare? Explore roles currently available.</p>
+      <p>
+        Current Opportunities:
+        <a href="https://www.linkedin.com/company/YourCompanyName/jobs/" target="_blank" rel="noopener noreferrer">
+          View Open Positions on LinkedIn
+        </a>
+      </p>
+      <p>Be part of a team that values vision, quality, and continuous innovation.</p>
+    </div>
+  </section>
+
+  <section class="section" id="social-feeds">
+    <div class="container">
+      <h2>Social Media</h2>
+      <div class="social-feeds-grid">
+        <div class="twitter-feed">
+          <h3>Latest Tweets</h3>
+          <a class="twitter-timeline" data-height="400" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">
+            Tweets by BioWeave
+          </a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="linkedin-feed">
+          <h3>LinkedIn Updates</h3>
+          <p>LinkedIn does not provide an official feed embed. Options:</p>
+          <ul>
+            <li>Embed individual posts manually.</li>
+            <li>Use a third-party aggregator or social media tool.</li>
+            <li>
+              Link directly to:
+              <a href="https://www.linkedin.com/company/YourCompanyName/" target="_blank" rel="noopener noreferrer">
+                BioWeave on LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="blogs-cta">
+    <div class="container">
+      <h2>Blogs</h2>
+      <p>
+        Discover the latest insights and thought leadership on suture innovation,
+        manufacturing processes, and more.
+      </p>
+      <a href="../blogs.html" class="btn-secondary">Visit Our Blogs</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 BioWeave. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
