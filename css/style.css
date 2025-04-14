@@ -11,11 +11,11 @@ body {
   color: #333;
 }
 
-/* FULL-WIDTH CONTAINER WITH 1% SIDE PADDING */
+/* FULL-WIDTH CONTAINER WITH PADDING */
 .container {
   width: 100%;
   margin: 0;
-  padding: 0 1%;
+  padding: 2rem 1rem; /* Top & bottom: 2rem, Left & right: 1rem */
 }
 
 /* HEADER (Fluid Full-Width) */
@@ -47,6 +47,7 @@ body {
 .logo {
   display: flex;
   align-items: center;
+  padding-left: 2rem;
 }
 .logo a {
   display: flex;
@@ -75,6 +76,7 @@ body {
   background: none;
   border: none;
   cursor: pointer;
+  padding-right: 1rem;
 }
 .menu-toggle .bar {
   width: 100%;
@@ -86,6 +88,7 @@ body {
 /* NAV MENU */
 .site-nav {
   transition: transform 0.3s ease;
+  padding: 0 1rem;
 }
 .site-nav ul {
   list-style: none;
@@ -108,6 +111,7 @@ body {
   height: 100vh;
   margin-top: 70px;
   overflow: hidden;
+  padding: 0; /* Remove padding to allow full-width video */
 }
 .hero-video {
   position: absolute;
@@ -195,6 +199,22 @@ body {
   color: #fff;
   padding: 2rem 0;
   text-align: center;
+}
+
+/*About Us Page*/
+
+.team-section h2 {
+  font-size: 2rem;
+  margin-top: 4rem; /* Add this line for spacing above each heading */
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.section-divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 4rem auto;
+  width: 60%;
 }
 
 /* RESPONSIVE: Mobile Navigation */
