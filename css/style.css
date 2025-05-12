@@ -37,17 +37,18 @@ body {
 
 .brand-name {
   display: block;
-  font-size: 3rem;            /* Much bigger */
+  font-size: 3rem !important;
   font-weight: 800;
-  color: #000;
+  font-style: calibri !important;
+  color: #57af96 !important;
 }
 
 .tagline {
   display: block;
-  font-size: 0.6rem;          /* Much smaller */
-  color: #1E88E5;             /* Blue tone */
+  font-size: 1rem !important;
+  color: #8C8C8C !important;
   font-style: italic;
-  margin-top: 0rem;           /* Minimal space between name and tagline */
+  margin-top: 0rem;
   letter-spacing: 0.05em;
 }
 
@@ -75,6 +76,7 @@ body {
   align-items: center;
   text-decoration: none;
 }
+
 .logo img {
   height: 5vw;
   max-height: 50px;
