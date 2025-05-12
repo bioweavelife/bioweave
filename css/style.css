@@ -42,7 +42,9 @@ body {
   font-size: 0.7rem;          /* Smaller tagline */
   color: #1E88E5;           /* A distinct blue for contrast */
   font-style: italic;
-  margin-top: 0.25rem;
+  margin-top: 0rem;           
+  letter-spacing: 0.05em;
+  line-height: 1;
 }
 
 /* HEADER CONTAINER: No side padding */
