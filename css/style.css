@@ -39,7 +39,7 @@ body {
 
 .tagline {
   display: block;
-  font-size: 1rem;          /* Smaller tagline */
+  font-size: 0.7rem;          /* Smaller tagline */
   color: #1E88E5;           /* A distinct blue for contrast */
   font-style: italic;
   margin-top: 0.25rem;
