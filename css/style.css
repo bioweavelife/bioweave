@@ -52,6 +52,31 @@ body {
   letter-spacing: 0.05em;
 }
 
+.story-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;   /* Center block horizontally */
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1000px;         /* Prevents stretching full width */
+  margin: 0 auto;            /* Horizontally centers the block */
+}
+
+.story-image img {
+  width: 280px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.story-text {
+  flex: 1;
+  font-size: 1.25rem;      /* Increase font size */
+  color: #444;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
 /* HEADER CONTAINER: No side padding */
 .header-container {
   display: flex;
