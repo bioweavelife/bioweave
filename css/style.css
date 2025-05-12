@@ -30,6 +30,14 @@ body {
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
+.tagline {
+  display: block;
+  font-size: 1rem;
+  color: #555;
+  margin-top: 0.25rem;
+  font-style: italic;
+}
+
 /* HEADER CONTAINER: No side padding */
 .header-container {
   display: flex;
